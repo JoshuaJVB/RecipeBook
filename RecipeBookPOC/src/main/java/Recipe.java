@@ -1,41 +1,18 @@
-package com.Wozu.JoshuaVanBaalen.RecipeBook.model;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
 import java.util.ArrayList;
+import java.util.HashMap;
 
-@Entity
 public class Recipe {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-    private ArrayList<String> ingredients;
-    private String link;
-
-    @Override
-    public String toString() {
-        return "Recipe{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", ingredients=" + ingredients +
-                ", link='" + link + '\'' +
-                '}';
-    }
-
-    public Recipe(){
-    }
+    String name;
+    ArrayList<String> ingredients;
+    String link;
 
     public Recipe(String name, ArrayList ingredients){
         this.name = name;
         this.ingredients = ingredients;
     }
 
-    public Recipe(String name, ArrayList ingredients, String link){
+    public Recipe(String name, ArrayList ingredients,String link){
         this.name = name;
         this.ingredients = ingredients;
         this.link = link;
@@ -43,10 +20,6 @@ public class Recipe {
 
     public void addIngredient(String item){
         ingredients.add(item);
-    }
-
-    public long getId(){
-        return id;
     }
 
     public String getName() {
