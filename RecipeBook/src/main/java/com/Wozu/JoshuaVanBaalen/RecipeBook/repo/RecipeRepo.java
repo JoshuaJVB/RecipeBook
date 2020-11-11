@@ -5,6 +5,7 @@ package com.Wozu.JoshuaVanBaalen.RecipeBook.repo;
 
 import com.Wozu.JoshuaVanBaalen.RecipeBook.model.Recipe;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
-public interface RecipeRepo extends JpaRepository<Recipe, Long> {
+public interface RecipeRepo extends CrudRepository<Recipe, Long> {
 }
