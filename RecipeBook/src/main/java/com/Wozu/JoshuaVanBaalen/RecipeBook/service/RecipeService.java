@@ -33,6 +33,10 @@ public class RecipeService {
         return (List<Recipe>)recipeRepo.findAll();
     }
 
+    public Optional<Recipe> getRecipe(Long i){
+        return recipeRepo.findById(i);
+    }
+
     public Optional<Recipe> getSingleRecipe(Long id){
         return recipeRepo.findById(id);
     }
