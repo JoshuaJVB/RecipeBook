@@ -30,7 +30,11 @@ public class RecipeService {
     }
 
     public List<Recipe> getRecipeList(){
-        return recipeRepo.findAll();
+        return (List<Recipe>)recipeRepo.findAll();
+    }
+
+    public Optional<Recipe> getRecipe(Long i){
+        return recipeRepo.findById(i);
     }
 
     public Optional<Recipe> getSingleRecipe(Long id){

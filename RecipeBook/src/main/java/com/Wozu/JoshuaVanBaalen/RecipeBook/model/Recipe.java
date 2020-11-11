@@ -30,6 +30,7 @@ public class Recipe {
     public Recipe(){
     }
 
+
     public Recipe(String name, ArrayList ingredients){
         this.name = name;
         this.ingredients = ingredients;
@@ -45,7 +46,7 @@ public class Recipe {
         ingredients.add(item);
     }
 
-    public long getId(){
+    public Long getId(){
         return id;
     }
 
