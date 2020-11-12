@@ -1,18 +1,29 @@
 package com.Wozu.JoshuaVanBaalen.RecipeBook.model;
 
-import javax.persistence.Entity;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 
-@Entity
 public class ShoppingCart {
 
-    private Long[] choices;
+    private ArrayList<Long> cart;
 
-    public Long[] getChoices() {
-        return choices;
+
+    public ShoppingCart() {
     }
 
-    public void setChoices(Long[] choices) {
-        this.choices = choices;
+    public ArrayList<Long> getCart() {
+        return cart;
+    }
+
+    public void setCart(ArrayList<Long> choices) {
+        this.cart = choices;
+    }
+
+    @Override
+    public String toString() {
+        return "ShoppingCart{" +
+                "choices=" + cart +
+                '}';
     }
 }
