@@ -41,10 +41,8 @@ public class Controller {
 
     @PostMapping("/choosecart")
     public void chooseCart(@RequestBody ShoppingCart c){
-        System.out.println(c.toString());
         cart = new ShoppingCart();
         cart.setCart(c.getCart());
-        System.out.println(cart.toString());
     }
 
     @GetMapping("/shoppingList")
