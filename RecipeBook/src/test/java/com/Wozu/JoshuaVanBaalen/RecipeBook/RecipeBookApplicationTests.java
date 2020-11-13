@@ -1,6 +1,7 @@
 package com.Wozu.JoshuaVanBaalen.RecipeBook;
 
 import com.Wozu.JoshuaVanBaalen.RecipeBook.model.Recipe;
+import com.Wozu.JoshuaVanBaalen.RecipeBook.model.ShoppingCart;
 import com.Wozu.JoshuaVanBaalen.RecipeBook.repo.RecipeRepo;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,19 +24,13 @@ class RecipeBookApplicationTests {
 
 	@Test
 	void recipeTest(){
-		ArrayList<String> list = new ArrayList();
-		list.add("steak");
-		list.add("butter");
-		Recipe r = new Recipe("Steak", list, "link");
-
-
-
-		repo.save(r);
-//		Recipe expected = r;
-//		Optional<Recipe> actual = repo.findById(1L);
-//		assertEquals(expected,actual);
-
-		//System.out.println(repo.findAll());
+//		ShoppingCart cart = new ShoppingCart();
+//		ArrayList<Long> list = new ArrayList<>();
+//		list.add(1L);
+//		list.add(2L);
+//
+//		cart.setCart(list);
+//		System.out.println(cart.getCart());
 	}
 
 }
